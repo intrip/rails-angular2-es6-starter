@@ -1,0 +1,7 @@
+- e2e test login succes e login error e check messaggi vari
+- effetto click come sito web angular
+
+==== AFTER ====
+
+- ricordarti l'utente corrente con i cookie e/o localstorage, vedi come farlo
+- recupero password

@@ -1,0 +1,11 @@
+#nav-menu > ul > li > a:hover,
+#nav-menu > ul > li > a:focus {
+	background-color: rgba(158,158,158,0.2) !important;
+}
+.app-logo {
+	height: 50px;
+	float: left;
+}
+.version {
+	font-size: 12px;
+}

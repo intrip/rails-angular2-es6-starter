@@ -1,0 +1,21 @@
+javascript:
+  angular/lib:
+    require:
+      - 'zone.js'
+      - 'angular2/router'
+      - 'angular2/core'
+      - 'angular2/platform/browser'
+      - 'angular2/common'
+      - 'reflect-metadata'
+      - 'babel-polyfill'
+      - 'rxjs/Rx'
+  angular/app:
+    external:
+      - 'zone.js'
+      - 'angular2/router'
+      - 'angular2/core'
+      - 'angular2/platform/browser'
+      - 'angular2/common'
+      - 'reflect-metadata'
+      - 'babel-polyfill'
+      - 'rxjs/Rx'

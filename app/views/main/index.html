@@ -1,0 +1,28 @@
+<app>Caricamento...</app>
+
+<!--  JAVACOOP: INCLUSIONE DELLA APPLET JAVA DI COOPERAZIONE -->
+<OBJECT classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" width="0" height="0"
+NAME = "CoreAppletPlugin" ALIGN = top VSPACE = 0 HSPACE = 0  codebase="https://java.sun.com/update/1.5.0/jinstall-1_5_0_09-windows-i586.cab#Version=1,5,0,9">
+	<PARAM NAME = CODE VALUE = "it.intersail.coop.CoopApplet" >
+	<PARAM NAME = CODEBASE VALUE = "http://ced-sisi/AlboPretorio/Core-ServerJar" >
+	<PARAM NAME = ARCHIVE VALUE = "Core-Applet.jar,Core-LC.jar">
+	<PARAM NAME = NAME VALUE = "CoreApplet">
+	<PARAM NAME = MAYSCRIPT VALUE = true >
+	<param name="initial_focus" value="false">
+	<PARAM NAME="java_arguments" value="-Xmx512m">
+	<param name="RemoteCommandsUrl" value="http://ced-sisi/AlboPretorio/Core-Server/Default.aspx"/>
+	<param name="CommandProviderUrl" value="http://ced-sisi/AlboPretorio/Core-Server/Commands.aspx"/>
+	<param name="LogFileName" value="%user.home%/sisi.log"/>
+    <param name="LogFileOverwrite" value="1"/>
+	<param name="UseChunks" value="1"/>
+	<COMMENT>
+		<EMBED width="0" height="0" type="application/x-java-applet;version=1.5"  CODE = "it.intersail.coop.CoopApplet"
+			CODEBASE = "http://opt-sisi/SISI-IZSLER/Core-ServerJar" ARCHIVE = "Core-Applet.jar,Core-LC.jar"
+			NAME = "CoreApplet" ALIGN = top VSPACE = 0 HSPACE = 0 MAYSCRIPT = true HIDDEN=TRUE initial_focus = false java_arguments="-Xmx512m"
+			pluginspage="https://java.sun.com/j2se/1.5.0/download.html"
+			RemoteCommandsUrl="http://ced-sisi/AlboPretorio/Core-Server/Default.aspx"
+			CommandProviderUrl="http://ced-sisi/AlboPretorio/Core-Server/Commands.aspx"
+			UseChunks="1" LogFileName="%user.home%/sisi.log" LogFileOverwrite="1">
+		</EMBED>
+	</COMMENT>
+</OBJECT>

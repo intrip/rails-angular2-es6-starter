@@ -1,0 +1,30 @@
+<div class="container animated fadeIn">
+    <div class="navbar-header">
+        <img *ngIf="appLogoPath !== undefined" src="{{appLogoPath}}" class="app-logo" />
+        <a class="navbar-brand">{{appName}} <span class="version">{{version}}</span></a>
+    </div>
+    <div id="nav-menu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li><a [routerLink]="['/List']" id="test">Lista</a></li>
+        </ul>
+
+        <!-- User info login/logout area -->
+        <ul class="nav navbar-nav navbar-right">
+          <li *ngIf="check()">
+              <a>
+                <i class="fa fa-user"></i> {{currentUser.nome}} {{currentUser.cognome}}
+              </a>
+          </li>
+          <li *ngIf="check()">
+            <a (click)="logout()">
+              <i class="fa fa-sign-out"></i> Logout
+            </a>
+        </li>
+        <li *ngIf="!check()">
+            <a [routerLink]="['/Login']" >
+              <i class="fa fa-sign-in"></i> Login
+            </a>
+        </li>
+    </ul>
+</div>
+</div>

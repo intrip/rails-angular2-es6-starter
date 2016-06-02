@@ -1,0 +1,7 @@
+
+=== AFTER ====
+
+- e2e test per contenuti menu e login e logout btn
+- estendi menu component in modo che sia configurabile per v
+oci e testalo
+- estendi menu component in modo che sia configurabile per colori e altri campi e vedi come farlo in logica gemma che ti importi poi

@@ -1,0 +1,7 @@
+- finisci login e menu prima degli a capo
+- lista processi
+- aggiorna le varie librerie package.json
+- e2e spec di quello che c'è
+- configura il titolo in base alla config
+- test ie9
+- crea tool per testare chiamate che gira sempre tranne che in produzione

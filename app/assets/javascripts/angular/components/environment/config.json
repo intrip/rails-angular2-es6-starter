@@ -1,0 +1,20 @@
+{
+	defaults: {
+		appName: "Albo Pretorio Manager",
+		appLogoPath: null,
+		application: "albo_pretorio",
+		version: "2.0.0",
+		debug: false
+	},
+	development: {
+		debug: true,
+		myAddress: "0.0.0.0",
+		remoteServerName: "CED-SISI"	
+	},
+	testing: {
+
+	},
+	production: {
+
+	}
+}

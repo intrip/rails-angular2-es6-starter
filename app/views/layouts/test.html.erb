@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing page</title>
+	<%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
+<body>
+	<%= yield %>
+	<!-- javascript need to be in the end of the body -->
+	<%= javascript_include_tag 'coop/application'%>
+</body>
+</html>

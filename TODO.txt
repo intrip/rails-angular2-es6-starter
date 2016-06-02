@@ -1,0 +1,12 @@
+TODO ALBO
+	- list component
+	- footer component (brand new)
+	- test component per testare i vari comandi e pialla la rotta test così
+	- fix il warning "mutating the [[Prototype]]" etc..
+	- estra in in configurazione titolo app e dati applet, versione software etc
+	- altri componenti continua
+POI
+	- stateService per mostrare titolo diverso se in pagina diversa
+	- custom 404 and 500 pages also for angular the same thing
+	- avvio production mode sse Rails.env.production?
+	- gestire errori se command non va mostrare qualcosa di intelligente

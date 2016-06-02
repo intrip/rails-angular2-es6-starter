@@ -1,0 +1,16 @@
+.body-container {
+	padding-top: 50px;
+}
+
+a {
+	cursor: pointer;
+}
+
+.btn {
+	background-color: #0067ec;
+	background: linear-gradient(180deg, #0087f9, #0067ec);
+}
+
+.btn:hover {
+	opacity: 0.8;
+}

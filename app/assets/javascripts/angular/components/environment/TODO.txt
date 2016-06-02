@@ -1,0 +1,4 @@
+- associa un api che ti permette di chiedere a rails l'environment ed usa
+  quella per ottenere l'environment, per karma ovviamente dai la possibilità di forzare 
+  un'environment così nel bootstrap vai a settare l'environment
+- enableprod mode if production

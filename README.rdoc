@@ -1,0 +1,66 @@
+== AlboFE
+
+Frontend Rails/AngularJS 2 per albo pretorio.
+
+== Installazione
+
+. bundle
+. npm install
+. rails s
+
+=== Requisiti
+
+. Rails 4.2 e ruby envirnoment con ruby 2.2.2 o maggiore
+. NodeJS (se usi mac puoi fare sudo port install nodejs o sudo brew install nodejs su linux usa il pacchetto apposito nodejs, su windows: https://nodejs.org/en/) 
+	Importante: assicurati di avere una verisone di npm >= a 3 altrimenti la compilazione è ancora + lenta!!! 
+
+==== Consigli per lo sviluppatore
+. Firefox developer è il browser consigliato per lo sviluppo: https://www.mozilla.org/it/firefox/developer/
+  perchè contiene più funzionalità di debug di firefox base ma usa lo stesso interprete(quindi è come testare con firefox)
+
+=== Architettura
+
+
+=== Browserify
+	Broserify-rails è una gemma che permette di eseguire browserify in rails, browserify è un modulo
+	che permette di usare i "require" di nodejs nel browser, questo permette di installare moduli nodejs 
+	ed eseguiri all'interno del browser. Grazie a browserify e babelify è possibile usare ES2015 e Angular2. La configurazione del modulo la si trova nel file config/application.rb di Rails
+
+=== Test suite
+	eseguire ./bin/karma dalla directory principale del progetto(di default usa firefox developer come browser)
+
+
+==== Auto reload page:
+	- installare l'estensione di livereload: http://livereload.com/extensions/#installing-sections
+	- eseguire bundle exec guard nel terminale
+
+
+=== Compile time
+	Per velocizzare il compile time ogni nuova dipendenza che viene inserita nell'app angular deve essere inserita anche nel file browserify.yml nella voce "require" ed "external", in questo modo la libreria viene precompilata e si velocizza la compilazione.
+
+
+=== AngularJS
+	Importante: ricordare di caricare sempre zone.js prima di angular altrimenti vi troverete con dei bug subdoli.
+
+==== Struttura file
+	L'applicazione è formata da varie componenti, ogni componente deve essere inserita nell'apposita folder components
+
+==== Componenti core
+	- app
+	- environment
+	- lib
+
+	Dipendenze altri componenti (componentea => componenteb significa componentea dipende da componenteb) 
+	- menù => auth
+
+=== Style guide
+	. Le graffe non si mettono a capo, si usa la variante K&R, esempio
+	let infiniteLoop=truee;
+	while(infiniteLoop) {
+		console.log("loop..");
+	}
+	. Per le Classi si usa CamelCase con iniziale lettera maiuscola
+	. Per le variabili si usa il camelCase con inziale minuscola
+	Per altre info vedere: https://github.com/elierotenberg/coding-styles/blob/master/es6.md
+
+	I metodo privati sono prefissati da un _ per convenzione visto che es6 non supporta la visibilità dei metodi

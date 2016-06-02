@@ -1,0 +1,36 @@
+<div class="container animated fadeInDown">
+    <div class="card card-container">
+        <img id="profile-img" class="profile-img-card" src="assets/images/login_avatar.png" />
+        <p id="profile-name" class="profile-name-card"></p>
+        <form class="form-signin" (submit)="doLogin()" [ngFormModel]="loginForm">
+            
+            <div *ngIf="loginForm.pristine" class="alert alert-info">
+                Inserisci le credenziali di accesso e premi su Accedi
+            </div>
+
+            <div *ngIf="loginError" class="alert alert-warning">
+                {{loginError}}
+            </div>
+
+            <input type="text" id="input-username" ngControl="username" class="form-control" placeholder="Nome utente" autofocus>
+          
+            <span *ngIf="username.dirty && !username.valid" class="text text-danger">
+                Nome utente obbligatorio
+            </span>
+
+            <input type="password" ngControl="password" id="input-password" class="form-control" placeholder="Password">
+
+            <span *ngIf="password.dirty && !password.valid" class="text text-danger">
+                Password obbligatoria
+            </span>
+            
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit"  
+            [disabled]="!loginForm.valid">Accedi</button>
+        </form>
+       
+        <!-- <a href="#" class="forgot-password">
+            Password dimenticata?
+        </a> -->
+    </div>
+</div>
+

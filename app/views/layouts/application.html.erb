@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular2</title>
+	<%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
+<body>
+	<%= yield %>
+	<!-- javascript need to be in the end of the body -->
+	<%= javascript_include_tag 'coop/application'%>
+	<%= javascript_include_tag 'angular/lib'%>
+	<%= javascript_include_tag 'angular/app'%>
+</body>
+</html>
